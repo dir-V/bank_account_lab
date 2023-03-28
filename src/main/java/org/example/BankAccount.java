@@ -32,6 +32,18 @@ public class BankAccount {
     }
 
 
+    public void setFirstName(String newFirstName){
+        this.firstName = newFirstName;
+    }
+    public void setLastName(String newLastName){
+        this.firstName = newLastName;
+    }
+    public void setDateOfBirth(String newDateofBirth){
+        this.firstName = newDateofBirth;
+    }
+
+
+
 // Deposit, Withdrawal and Interest Methods
     public int deposit(int amount){
         return this.balance + amount;
