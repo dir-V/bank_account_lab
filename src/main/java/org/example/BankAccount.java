@@ -12,7 +12,7 @@ public class BankAccount {
         this.lastName = inputLastName;
         this.dateOfBirth = inputDateOfBirth;
         this.accountNumber = inputAccountNumber;
-        this.balance = 0;
+        this.balance = 100;
     }
 
     public int deposit(int amount){
@@ -23,8 +23,8 @@ public class BankAccount {
         return this.balance - amount;
     }
 // Generous Bank
-    public int interest(){
-        return (this.balance * o.25) + this.balance;
+    public int interest(double interestRate){
+        return (int) (this.balance * interestRate) + (this.balance);
     }
 
 
