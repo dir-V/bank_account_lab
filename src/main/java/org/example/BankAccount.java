@@ -12,9 +12,27 @@ public class BankAccount {
         this.lastName = inputLastName;
         this.dateOfBirth = inputDateOfBirth;
         this.accountNumber = inputAccountNumber;
-        this.balance = 100;
+        this.balance = 0;
+    }
+//    Getters and Setters
+    public String getFirstName(){
+        return this.firstName;
+    }
+    public String getLastName(){
+        return this.lastName;
+    }
+    public String getDateOfBirth(){
+        return this.dateOfBirth;
+    }
+    public int getAccountNumber(){
+        return this.accountNumber;
+    }
+    public int getBalance(){
+        return this.balance;
     }
 
+
+// Deposit, Withdrawal and Interest Methods
     public int deposit(int amount){
         return this.balance + amount;
     }

@@ -14,23 +14,23 @@ public class BankAccountTest {
     @Test
     public void canDeposit(){
         int actual = bankAccount.deposit(20);
-        int expected = 120;
+        int expected = 20;
 
         assertThat(actual).isEqualTo(expected);
     }
     @Test
     public void canWithdraw(){
         int actual = bankAccount.withdrawal(80);
-        int expected = 20;
+        int expected = -80;
 
         assertThat(actual).isEqualTo(expected);
     }
     @Test
     public void canPayInterest(){
         int actual = bankAccount.interest(0.25);
-        int expected = 125;
+        int expected = 0;
 
-        assertThat(actual).isEqualTo(expected);
+        assertThat(actual).isEqualTo(bankAccount);
     }
 
 
